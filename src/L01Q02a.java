@@ -1,8 +1,10 @@
+//library with commmands to read data
 import java.util.Scanner;
 
 public class L01Q02a {
     public static void main(String[] args){
 
+        //object to read inputs
         Scanner texto = new Scanner(System.in);
         String str;
         Float nota1;
@@ -14,7 +16,9 @@ public class L01Q02a {
         nota1=Float.parseFloat(str);
 
         System.out.print("Informe a segunda nota");
+        //reading value in string type
         str = texto.nextLine();
+        //convert string type to float number
         nota2=Float.parseFloat(str);
 
         media=(nota1+nota2)/2;
